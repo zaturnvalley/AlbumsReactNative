@@ -1,2 +1,2 @@
 # Albums: Intro to React Native
-* Project using react native
+* Project using React Native
