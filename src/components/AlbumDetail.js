@@ -9,7 +9,10 @@ const AlbumDetail = ({ album }) => {
     <Card>
       <CardSection>
         <View>
-          <Image source={{ uri: thumbnail_image }} />
+          <Image 
+          style={styles.thumbnailStyle} 
+          source={{ uri: thumbnail_image }} 
+          />
         </View>
         <View style={styles.headerContentStyle}>
           <Text>{title}</Text>
@@ -23,7 +26,12 @@ const AlbumDetail = ({ album }) => {
 const styles = {
   headerContentStyle: {
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    paddingLeft: 5
+  },
+  thumbnailStyle: {
+    height: 50,
+    width: 50
   }
 };
 
